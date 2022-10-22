@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>weather app</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+   <link rel="stylesheet" href="src/style.css">
+   <script src="https://kit.fontawesome.com/b8acd1d69f.js" crossorigin="anonymous"></script>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Fira+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Lato:ital@1&family=Reem+Kufi+Fun:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <div class="container"> 
+  <div class="weather-app">
+  <form class="search-form" id="search-form">
+  <div class="row">
+  <div class="col-6">
+  <input type="text" 
+  placeholder="Enter a city..." 
+  autocomplete="off"
+  autofocus="on"
+  class="form-control shadow-sm"
+  id="search-input"
+  />
+  </div>
+  <div class="col-3">
+  <input type="submit" value="search" 
+  class="form-control btn btn-primary shadow-sm w-100"
+  />
+  </div>
+  <div class="col-3">
+    <button type="button" class="btn btn-secondary w-100" id="location">Current</button>
+  </div>
+  </div>
+  </form>
+  <br/>
+  <br/>
+  <h1 id="city">   
+  </h1>
+  <br/>
+  <ul> 
+  <div id="date"></div>
+  <div id="description"></div>
+  </ul> 
+  <div class="row">
+  <div class="col-6">
+    <div class="clearfix">
+  <img src="#" 
+  class="weather-icon float-left"
+  /> 
+  <div class="float-left">
+  <span class="temperature" id="temperature"> </span>
+  <span class="units">°C</span>
+</div>
+</div>
+</div>
+ <div class="col-6">
+  <ul>
+  <li>
+  Humidity: <span id="humidity"></span> % 
+  </li>
+  <li>
+  Wind: <span id="wind"></span>km/h
+  </li>
+    </ul>
+    </div>
+    </div>
+<br/>
+<br/>
+<div class="row weather-forecast">
+  <div class="col-2">
+    <h3>
+      Wed
+     </h3>
+      <div>
+      <img class=forescast-icon src="images/rainy.png" alt=""width="40px">
+      </div>
+       <strong>
+        13°C  
+      </strong>
+  </div>
+  <div class="col-2">
+    <h3>
+      Thur
+      </h3>
+       <div>
+     
+      </div>
+    <strong>
+        11°C
+      </strong>
+  </div>
+  <div class="col-2">
+    <h3>
+      Fri
+      </h3>
+       <div>
+      <img class=forescast-icon src="images/sunny-cloudy.png" alt=""width="50px">
+      </div>
+    <strong>
+        16°C
+      </strong>
+  </div>
+  <div class="col-2">
+    <h3>
+      Sat
+      
+      </h3>
+       <div>
+      <img class=forescast-icon src="images/rainy.png" alt=""width="40px">
+      </div>
+      <strong>
+        14°C
+      </strong>
+      </div>
+      <div class="col-2">
+      <h3>
+      Sun
+     </h3>
+       <div>
+      <img class=forescast-icon src="images/rainy.png" alt=""width="40px">
+      </div>
+     <strong>
+        15°C
+      </strong>
+  </div>
+  <div class="col-2">
+    <h3>
+      Mon
+     </h3>
+      <div>
+      <img class=forescast-icon src="images/rainy.png" alt=""width="40px">
+      </div>
+       <strong>
+        10°C  
+      </strong>
+</div>
+</div>
+  </div> 
+  <script src="script.js"></script>
+</body>
+</html>
